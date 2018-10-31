@@ -7,3 +7,6 @@ def index(request):
 
 def about(request):
     return render(request, 'personal/about.html')
+
+def overview(request):
+    return render(request, 'personal/overview.html')

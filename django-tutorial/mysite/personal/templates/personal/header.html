@@ -16,7 +16,7 @@
   </style>
 </head>
 
-<body class="body" style="background-color:#f6f6f6; background-image: url({% static 'personal/img/background.jpg' %})">
+<body class="body" style="background-color:#f6f6f6; background-image: url({% static 'personal/img/background4.png' %})">
   <div class="container-fluid" style="min-height:100%; width:95%">
     <div class="row">
         <div class="col-sm-2">
@@ -43,35 +43,27 @@
           <ul class="nav nav-pills nav-stacked row justify-content-center">
             <li class="col-sm-2 text-center"><a href='/'>Home</a></li>
             <li class="col-sm-2 text-center"><a href='/overview/'>Overview</a></li>
-            <li class="col-sm-2 text-center"><a href='/gameplay/'>Gameplay</a></li>
-            <li class="col-sm-2 text-center"><a href='/about/'>5Humans</a></li>
+            <li class="col-sm-2 text-center"><a href='/about/'>5 Humans</a></li>
           </ul>
         </div> <!--well bs-sidebar affix-->
       </div> <!--col-sm-2-->
     </div>
 
-  <hr style="border-width: 4px";>
-
-    <div class="row">
-      <div class="col-sm-10">
-        <div class='container-fluid'>
-        <br><br>
-           {% block content %}
-           {% endblock %} 
-        </div>
-      </div>
-    </div> 
+    <hr style="border-width: 4px";>
+    <br></br>
+    {% block content %}
+    {% endblock %} 
 </div>
+
+  <br></br>
 
   <footer>
     <div class="container-fluid" style='margin-left:15px;'>
       <center>
-        <br>
-        <p>
-          <a href="#" target="blank">Contact</a> | <a href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a> <br> Copyright @ 2018 5 Humans All rights reserved 
-        </p>
         <img src="{% static 'personal/img/5humans.png' %}" class="responsive-img" style='max-height:100px;' alt="Team Logo">
-        <br></br>
+        <p style="color: white">
+          <br> Copyright @ 2018 5 Humans All rights reserved 
+        </p>
       </center>
     </div>
   </footer> 

@@ -10,3 +10,6 @@ def about(request):
 
 def overview(request):
     return render(request, 'personal/overview.html')
+
+def downloads(request):
+	return render(request, 'personal/downloads.html')

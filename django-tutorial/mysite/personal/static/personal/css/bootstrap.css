@@ -54,6 +54,16 @@ html {
   width: device-width;
 }
 
+@font-face {
+  font-family: 'Bim';
+  src: url('../static/personal/fonts/Bim.ttf') format("truetype")
+}
+
+@font-face{
+  font-family: 'Q-bo';
+  src: url('../static/personal/fonts/Q-bo.ttf') format("truetype")
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }

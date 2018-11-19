@@ -14,8 +14,10 @@
       height:110%
     }
     footer {
-      background-color: ;
       height: 200px;
+    }
+    h1 {
+      color: #0C0C0C
     }
     a {
       color: white;
@@ -25,15 +27,15 @@
       text-decoration: underline;
     }
     .nav_bar:hover{
-      background-color: #06201C;
-      transition: 0.3s;
+      background-color: #CD303F;
+      transition: 0.4s;
     }
   </style>
 </head>
 
-<body class="body" style="background-color:#f6f6f6; background-image: url({% static 'personal/img/background4.png' %})">
+<body class="body" style="background-color:#f6f6f6; background-image: url({% static 'personal/img/background2.png' %})">
 
-  <div class="nav_bar" style="position: fixed; width: 100%; padding: 12px; z-index: 5">
+  <div class="nav_bar" style="position: fixed; width: 100%; padding: 15px; z-index: 5;">
     <ul class="nav nav-pills nav-stacked row justify-content-center">
       <li class="col-sm-2 text-center"><a href='/'>Home</a></li>
       <li class="col-sm-2 text-center"><a href='/overview/'>Overview</a></li>
@@ -44,31 +46,11 @@
 
   <br><br><br>
 
-  <div class="container-fluid" style="min-height:100%; width:95%">
-      <div class="row">
-        <div class="col-sm-2">
-          <center>
-            <a href='/'><img src="{% static 'personal/img/rabbit.png' %}" class="responsive-img" style='max-height:100px;' alt="Rabbit"></a>
-          </center>
-        </div>
-        <div class="col-sm-8">
-          <br>
-          <center>
-            <h2 style="font-size: 44pt; color: #ffff; font-family: 'Q-bo'">Rabbit Rabbit</h2>
-          </center>
-        </div>
-        <div class="col-sm-2">
-      </div>
-    </div>
-
-    <hr style="border-width: 4px";>
     <br></br>
     {% block content %}
     {% endblock %} 
   </div>
 
-  <br></br>
-  <br></br>
   <br></br>
 
   <footer>

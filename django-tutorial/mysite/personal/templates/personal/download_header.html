@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Game Title</title>
+  <meta charset="utf-8" />
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+  <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+  <style type="text/css">
+    html,
+    body {
+      height:110%
+    }
+    footer {
+      height: 200px;
+    }
+
+    h1, h2 {
+      color: #0C0C0C;
+    }
+
+    button {
+      border-radius: 4px;
+      font-size: 12pt;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.10);
+      padding: 14px 40px;
+    }
+
+    a {
+      color: white;
+    }
+    a:hover {
+      color: gray;
+      text-decoration: underline;
+    }
+    .nav_bar:hover{
+      background-color: #799B88;
+      transition: 0.4s;
+    }
+    .container {
+      height: 700px;
+    }
+  </style>
+</head>
+
+<body class="body" style="background-color:#f6f6f6; background-image: url({% static 'personal/img/background3.png' %})">
+
+  <div class="nav_bar" style="position: fixed; width: 100%; padding: 15px; z-index: 5;">
+    <ul class="nav nav-pills nav-stacked row justify-content-center">
+      <li class="col-sm-2 text-center"><a href='/'>Home</a></li>
+      <li class="col-sm-2 text-center"><a href='/overview/'>Overview</a></li>
+      <li class="col-sm-2 text-center"><a href='/downloads/'>Downloads</a></li>
+      <li class="col-sm-2 text-center"><a href='/about/'>5 Humans</a></li>
+    </ul>
+  </div>
+
+  <br><br><br>
+
+  <div class="container">
+    <br></br>
+    {% block content %}
+    {% endblock %} 
+  </div>
+
+  <br></br>
+
+  <footer>
+    <div class="container-fluid" style='margin-left:15px;'>
+      <center>
+        <img src="{% static 'personal/img/5humans.png' %}" class="responsive-img" style='max-height:100px;' alt="Team Logo">
+        <p style="color: white">
+          <br> Copyright @ 2018 5 Humans All rights reserved 
+        </p>
+      </center>
+    </div>
+  </footer> 
+  
+</body>
+
+</html>

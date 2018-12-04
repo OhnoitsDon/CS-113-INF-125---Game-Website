@@ -1,0 +1,37 @@
+html {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+} 
+body {
+  font-family: sans-serif;
+  margin: 0;
+  width: 100vw; 
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+footer {
+  height: 200px;
+}
+h1 {
+  color: #0C0C0C
+}
+a {
+  color: white;
+}
+a:hover {
+  color: gray;
+}
+a:hover #carrot{
+  display: inline;
+  padding-right: 10px;
+}
+.nav_bar {
+  background-color: #CD303F;
+  transition: 0.4s;
+}
+#carrot {
+  display: none;
+}

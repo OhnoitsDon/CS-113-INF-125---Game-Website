@@ -1,0 +1,55 @@
+html {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+} 
+body {
+  font-family: sans-serif;
+  margin: 0;
+  width: 100vw; 
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+footer {
+  height: 200px;
+}
+
+h1, h2 {
+  color: black;
+}
+
+button {
+  border-radius: 4px;
+  font-size: 12pt;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 15px 0 rgba(0,0,0,0.10);
+  padding: 14px 40px;
+  border-color: gray;
+}
+
+button:hover {
+  background-color: #FDFFAF;
+  font-weight: bold;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: gray;
+}
+a:hover #carrot{
+  display: inline;
+  padding-right: 10px;
+}
+.nav_bar {
+  background-color: #799B88;
+  transition: 0.4s;
+}
+.container {
+  height: 700px;
+}
+#carrot {
+  display: none;
+}

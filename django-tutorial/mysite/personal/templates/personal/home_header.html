@@ -2,43 +2,25 @@
 <html lang="en">
 
 <head>
-  <title>Game Title</title>
+  <title>Rabit Rabit | Welcome</title>
   <meta charset="utf-8" />
   {% load staticfiles %}
-  <link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+  <link rel="stylesheet" href="{% static 'personal/css/bootstrap/bootstrap.min.css' %}" type="text/css"/>
+  <link rel="stylesheet" href="{% static 'personal/css/webpage/home.css' %}" type = "text/css"/>
   <meta name="viewport" content = "width=device-width, initial-scale=1.0">
-
-  <style type="text/css">
-    html,
-    body {
-      height:110%
-    }
-    footer {
-      background-color: ;
-      height: 200px;
-    }
-    a {
-      color: white;
-    }
-    a:hover {
-      color: gray;
-      text-decoration: underline;
-    }
-    .nav_bar:hover{
-      background-color: #679E73;
-      transition: 0.4s;
-    }
-  </style>
+  <meta name="description" content="Home Page for Rabbit Rabbit">
+  <meta name="keywords" content="rabbit, game, 5Humans">
+  <meta name="author" content="5Humans">
 </head>
 
 <body class="body" style="background-color:#f6f6f6; background-image: url({% static 'personal/img/background.png' %})">
 
   <div class="nav_bar" style="position: fixed; width: 100%; padding: 15px; z-index: 5;">
     <ul class="nav nav-pills nav-stacked row justify-content-center">
-      <li class="col-sm-2 text-center"><a href='/'>Home</a></li>
-      <li class="col-sm-2 text-center"><a href='/overview/'>Overview</a></li>
-      <li class="col-sm-2 text-center"><a href='/downloads/'>Downloads</a></li>
-      <li class="col-sm-2 text-center"><a href='/about/'>5 Humans</a></li>
+      <li class="col-sm-2 text-center"><a href='/' style="padding: 15px"><img id ="carrot" src="{% static 'personal/img/carrot.png' %}" class="responsive-img" style="max-height:20px;" alt='carrot'>Home</a></li>
+      <li class="col-sm-2 text-center"><a href='/overview/'><img id ="carrot" src="{% static 'personal/img/carrot.png' %}" class="responsive-img" style="max-height:20px;" alt='carrot'>Overview</a></li>
+      <li class="col-sm-2 text-center"><a href='/downloads/'><img id ="carrot" src="{% static 'personal/img/carrot.png' %}" class="responsive-img" style="max-height:20px;" alt='carrot'>Downloads</a></li>
+      <li class="col-sm-2 text-center"><a href='/about/'><img id ="carrot" src="{% static 'personal/img/carrot.png' %}" class="responsive-img" style="max-height:20px;" alt='carrot'>5 Humans</a></li>
     </ul>
   </div>
 
@@ -51,7 +33,7 @@
         <div class="col-sm-8">
           <br>
           <center>
-            <h2 style="font-size: 44pt; color: #ffff; font-family: 'Q-bo'">Rabbit Rabbit</h2>
+            <img src="{% static 'personal/img/title.png' %}" class="responsive-img" style='max-height:100px;' alt="title">
           </center>
         </div>
         <div class="col-sm-2">
@@ -64,17 +46,13 @@
     {% endblock %} 
   </div>
 
-  <br></br>
-
   <footer>
-    <div class="container-fluid" style='margin-left:15px;'>
       <center>
         <img src="{% static 'personal/img/5humans.png' %}" class="responsive-img" style='max-height:100px;' alt="Team Logo">
         <p style="color: white">
-          <br> Copyright @ 2018 5 Humans All rights reserved 
+          Copyright @ 2018 5 Humans All rights reserved 
         </p>
       </center>
-    </div>
   </footer> 
   
 </body>

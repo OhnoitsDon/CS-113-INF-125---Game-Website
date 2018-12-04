@@ -2,45 +2,25 @@
 <html lang="en">
 
 <head>
-  <title>Game Title</title>
+  <title>Rabbit Rabbit | Overview</title>
   <meta charset="utf-8" />
   {% load staticfiles %}
-  <link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+  <link rel="stylesheet" href="{% static 'personal/css/bootstrap/bootstrap.min.css' %}" type = "text/css"/>
+  <link rel="stylesheet" href="{% static 'personal/css/webpage/overview.css' %}" type = "text/css"/>
   <meta name="viewport" content = "width=device-width, initial-scale=1.0">
-
-  <style type="text/css">
-    html,
-    body {
-      height:110%
-    }
-    footer {
-      height: 200px;
-    }
-    h1 {
-      color: #0C0C0C
-    }
-    a {
-      color: white;
-    }
-    a:hover {
-      color: gray;
-      text-decoration: underline;
-    }
-    .nav_bar:hover{
-      background-color: #CD303F;
-      transition: 0.4s;
-    }
-  </style>
+  <meta name="description" content="Overivew Page for Rabbit Rabbit">
+  <meta name="keywords" content="rabbit, game, 5Humans">
+  <meta name="author" content="5Humans">
 </head>
 
 <body class="body" style="background-color:#f6f6f6; background-image: url({% static 'personal/img/background2.png' %})">
 
   <div class="nav_bar" style="position: fixed; width: 100%; padding: 15px; z-index: 5;">
     <ul class="nav nav-pills nav-stacked row justify-content-center">
-      <li class="col-sm-2 text-center"><a href='/'>Home</a></li>
-      <li class="col-sm-2 text-center"><a href='/overview/'>Overview</a></li>
-      <li class="col-sm-2 text-center"><a href='/downloads/'>Downloads</a></li>
-      <li class="col-sm-2 text-center"><a href='/about/'>5 Humans</a></li>
+      <li class="col-sm-2 text-center"><a href='/' style="padding: 15px"><img id ="carrot" src="{% static 'personal/img/carrot.png' %}" class="responsive-img" style="max-height:20px;" alt='carrot'>Home</a></li>
+      <li class="col-sm-2 text-center"><a href='/overview/'><img id ="carrot" src="{% static 'personal/img/carrot.png' %}" class="responsive-img" style="max-height:20px;" alt='carrot'>Overview</a></li>
+      <li class="col-sm-2 text-center"><a href='/downloads/'><img id ="carrot" src="{% static 'personal/img/carrot.png' %}" class="responsive-img" style="max-height:20px;" alt='carrot'>Downloads</a></li>
+      <li class="col-sm-2 text-center"><a href='/about/'><img id ="carrot" src="{% static 'personal/img/carrot.png' %}" class="responsive-img" style="max-height:20px;" alt='carrot'>5 Humans</a></li>
     </ul>
   </div>
 
@@ -50,8 +30,6 @@
     {% block content %}
     {% endblock %} 
   </div>
-
-  <br></br>
 
   <footer>
     <div class="container-fluid" style='margin-left:15px;'>

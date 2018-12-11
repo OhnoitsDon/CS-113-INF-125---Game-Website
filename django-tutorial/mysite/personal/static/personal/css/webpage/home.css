@@ -30,6 +30,10 @@ a:hover #carrot{
   background-color: #679E73;
   transition: 0.4s;
 }
-#carrot {
-  display: none;
+
+@media screen and (max-width: 1080px) {
+  .row img {
+    bottom: 0;
+  }
+
 }

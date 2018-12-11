@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   {% load staticfiles %}
   <link rel="stylesheet" href="{% static 'personal/css/bootstrap/bootstrap.min.css' %}" type="text/css"/>
-  <link rel="stylesheet" href="{% static 'personal/css/webpage/home.css' %}" type = "text/css"/>
+  <link rel="stylesheet" href="{% static 'personal/css/webpage/home.css' %}" type="text/css"/>
   <meta name="viewport" content = "width=device-width, initial-scale=1.0">
   <meta name="description" content="Home Page for Rabbit Rabbit">
   <meta name="keywords" content="rabbit, game, 5Humans">
@@ -24,24 +24,9 @@
     </ul>
   </div>
 
-  <br><br><br>
+  <br><br><br><br>
 
-  <div class="container-fluid" style="min-height:100%; width:95%">
-      <div class="row">
-        <div class="col-sm-2">
-        </div>
-        <div class="col-sm-8">
-          <br>
-          <center>
-            <img src="{% static 'personal/img/title.png' %}" class="responsive-img" style='max-height:100px;' alt="title">
-          </center>
-        </div>
-        <div class="col-sm-2">
-      </div>
-    </div>
-
-    <hr style="border-width: 4px";>
-    <br></br>
+  <div class="container-fluid" style="width:95%">
     {% block content %}
     {% endblock %} 
   </div>
